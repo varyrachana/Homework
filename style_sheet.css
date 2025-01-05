@@ -1,0 +1,130 @@
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+/*styling for whole website*/
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+img{
+    width: 100%;
+}
+.section-content{
+    margin:0 auto;
+    max-width: fit-content;
+    padding: 0 14px;
+}
+/*navbar styling*/
+header{
+    position: fixed;
+    width: 100%;
+    background-color:rgb(193, 230, 253);
+    z-index: 5;
+}
+    header .navbar{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.navbar .nav_logo .logo_text {
+    color:rgb(5, 176, 5);
+    font-size: 30px;
+    font-weight: 800;
+}
+.navbar .nav_menu {
+    display: flex;
+    gap:30px;
+}
+.navbar .nav_menu .nav_link{
+    padding: 10px 14px;
+    font-size: 1rem;
+    color: #000;
+    border-radius: 16px;
+    transition: 0.3s ease;
+}
+.navbar .nav_menu .nav_link:hover{
+    background-color: #f1ea31;
+    color:#3a0fe4;
+}
+.navbar :where(#menu-close-button,#menu-open-button){
+    display: none;
+}
+/*hero section styling*/
+.hero_section{
+    min-height: 100vh;
+    background-color: #19eeee;
+}
+.hero-section .section-content{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color:#000;
+    justify-content: space-between;
+    margin-left: 18px;
+}
+.hero-section .hero-detail .web-page{
+    font-style: 60px;
+    color: #e9831e;
+    font-family: "Miniver", sans-serif;
+}
+.hero-section .hero-detail .title{
+font-size: larger;
+}
+/* Responsive media query code for max width 600px*/
+@media screen and (max-width:900px){
+    body.show-mobile-menu header::before{
+        content: "";
+        position: fixed;
+        right:0;
+        top:0;
+        height: 100%;
+        width:100%;
+        backdrop-filter: blur(5px);
+    }
+    .navbar :where(#menu-close-button,#menu-open-button){
+        font-size: 24px;
+        display: block;
+    }
+    .navbar #menu-close-button{
+        position: absolute;
+        right: 16px;
+        top: 10px;
+    }
+    .navbar #menu-open-button{
+        color:#000;
+    }
+    .navbar .nav_menu {
+        display: block;
+        position: fixed;
+        left: -200px;
+        top: 0;
+        width: 200px;
+        height: 100%;
+        background-color: #9eddf1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+        transition:left 0.2s ease;
+    }
+    body.show-mobile-menu .navbar .nav_menu{
+        left:0;
+    }
+    .navbar .nav_menu .nav_link{
+        color: #464442;
+        font-size: 20px;
+        display: block;
+        margin-top: auto;
+    }
+}

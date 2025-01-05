@@ -1,0 +1,310 @@
+/*Import Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+AU+VIC+Guides&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  body{
+    background-color: rgb(240, 255, 255);
+  }
+  /*dark mode styling*/
+  .dark {
+    background-color: #000;
+  }
+  .nav_bar :where(#sunlight){
+   position: absolute;
+   cursor:pointer;
+   transition: 0.3s ease;
+  }
+  #sunlight{
+    opacity: 0;
+    pointer-events: none;
+  }
+  .active #sunlight {
+    opacity: 1;
+    pointer-events: auto;
+    color: #fff;
+  }
+  .active #dark_mode{
+    opacity: 0;
+    pointer-events: none;
+  }
+  /*style for whole slide*/
+  ul{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  button{
+    cursor:pointer;
+    border: none;
+    background: none;
+  }
+  
+.nav_bar .nav_logo img{
+    width: 30px;
+    height: 30px;
+    left: 0;
+    top:0;
+}
+/*Navigation bar styling*/
+header{
+  background-color: rgb(174,214,241);
+}
+header .nav_bar{
+  display: flex;
+  padding: 4px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid #453e3e 2px;
+}
+.nav_bar .nav_menu{
+  display: flex;
+  gap:5px;
+}
+.nav_bar .nav_menu .nav_link{
+  color:#000;
+  padding: 10px 12px;
+  transition: 0.3s ease;
+}
+.nav_bar .nav_link:hover{
+  color:#2909dd;
+  background-color:rgb(173, 255, 47);
+  border-radius: 10px;
+}
+.nav_bar :where(#menu_close_button, #menu_open_button){
+  display: none;
+}
+.nav_bar :where(#dark_mode, #account ,#sunlight, #menu_open_button){
+  font-size: 20px;
+  padding:8px;
+}
+/*navigation icon styling*/
+.nav_bar .menu_icon{
+  display: flex;
+  align-items: center;
+}
+.nav_bar .menu_icon .icon{
+  display: block;
+}
+/*form login and register*/
+/*.wrapper{
+  display: block;
+  position: absolute;
+  background-color: #95cae2;
+  width: 350px;
+  height: 400px;
+  border-radius: 20px;
+  justify-content: center;
+  justify-items: center;
+  margin: 0;
+  top:30%;
+  left:35%;
+}
+.wrapper .form-box h2{
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+}
+.wrapper .form-box .title{
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
+  padding: 3px;
+  font-size: 14px;
+}
+.wrapper .form-box .input-box .email,.password{
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 10px;
+  border-top: transparent;
+  outline:none;
+  border-bottom: solid 2px;
+}
+.wrapper .form-box .input-box .icone{
+  position: absolute;
+  margin-top: 36px;
+  right: 65px;
+  text-align: center;
+  justify-items: center;
+}
+.wrapper .form-box .remember-forget {
+  font-size: 12px;
+  margin-top:0;
+}*/
+.wrapper{
+  position: relative;
+  width: 400px;
+  height: 440px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 5);
+  border-radius: 20px;
+  backdrop-filter:blur(20px);
+  box-shadow: 0 0 30px rgba(0,0,0,5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .form-box{
+  width:100%;
+  padding: 40px;
+}
+.wrapper .form-box.login{
+  /*display:none;*/
+}
+.wrapper .form-box.register{
+  position: absolute;
+  transform: translateX(400px);
+}
+.wrapper .fas {
+  position:absolute;
+  top:0;
+  right: 0;
+  width:45px;
+  background: #162938;
+  font-size: 2rem;
+  color:#fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  cursor:pointer;
+  z-index: 1;
+}
+.form-box-login h2{
+  font-size: 2rem;
+  color:#162938;
+  text-align: center;
+}
+.input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #162938;
+  margin:30px 0
+}
+.input-box label{
+  position: absolute;
+  top:50%;
+  left: 5px;
+  transform:translateY(-50%);
+  font-size: 1rem;
+  color:#162938;
+  font-weight: 500;
+  pointer-events: none;
+  transition:.5s ;
+}
+.input-box input:focus~label,
+.input-box input:valid~label {
+  top:-5px; 
+}
+.input-box input{
+  width:100%;
+  height: 100%;
+  background: transparent;
+  border:none;
+  outline:none;
+  font-size: 1rem;
+  color:#162938;
+  font-weight:600;
+  padding:0 35px 0 5px;
+}
+.input-box .icon-form{
+  position:absolute;
+  right:8px;
+  font-size:1.2rem;
+  color:#162938;
+  line-height:57px;
+}
+.remember-forget{
+  font-size:.9em;
+  color:#162938;
+  font-weight:500;
+  margin:-15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.remember-forget label input{
+  accent-color: #162938;
+  margin-right:3px;
+}
+.remember-forget a{
+  color:#162938;
+  text-decoration:none;
+}
+.remember-forget a:hover{
+  text-decoration: underline;
+}
+.btn{
+  width:100%;
+  height:45px;
+  background: #162938;
+  border:none;
+  outline:none;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:1rem;
+  color:#fff;
+  font-weight:500;
+}
+.login-register{
+  font-size:.9em;
+  color:#162938;
+  text-align: center;
+  font-weight:500;
+  margin:25px 0 10px;
+}
+.login-register p a{
+  color:#162938;
+  text-decoration:none;
+  font-weight:600;
+}
+.login-register p a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width:900px) {
+  .nav_bar :where(#menu_close_button, #menu_open_button){
+    display: inline;
+    font-size: 20px;
+  }
+  .nav_bar #menu_close_button{
+    position: absolute;
+    right:16px;
+    top:16px;
+  }
+  .nav_bar #menu_open_button{
+    color: #000;
+  }
+  .nav_bar .nav_menu{
+    display:block;
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    padding:60px;
+    background-color:rgb(192, 192, 192) ;
+    transition: left 0.2s ease;
+  }
+  body.show-mobile-menu .nav_bar .nav_menu{
+    left: 0;
+  }
+  .nav_bar .nav_menu .nav_link{
+    color: #000;
+    display: block;
+    margin-top: 16px;
+  }
+  
+}

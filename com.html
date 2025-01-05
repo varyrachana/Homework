@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication Website</title>
+    <!--font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!--custom css file link-->
+    <link rel="stylesheet" href="com.css">
+</head>
+<body>
+    <header>
+        <nav class="nav_bar">
+            <a href="#" class="nav_logo">
+                <img src="https://png.pngtree.com/png-clipart/20220430/original/pngtree-women-nature-logo-png-image_7598961.png" alt="Nature.G logo">
+            </a>
+            <ul class="nav_menu">
+                <button id="menu_close_button" class="fas fa-times"></button>
+                <li class="nav_item">
+                    <a href="#" class="nav_link">Home</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav_link">About us</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav_link">General Knowledge</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav_link">Students</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav_link">Workers</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav_link">People</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav_link">Contact us</a>
+                </li>
+            </ul>
+            </div>
+            <div class="menu_icon">
+                <div class="dark-mode">
+                    <button id="sunlight" class="fa-sharp-duotone fa-solid fa-sun"></button>
+                    <button id="dark_mode" class="fa-solid fa-moon"></button>
+                </div>
+                <div class="icon">
+                    <button id="account" class="fa-solid fa-circle-user"></button>
+                    <button id="menu_open_button" class="fa fa-bars"></button>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <span class="fas fa-times"></span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon-form">
+                        <i class="fa fa-envelope-square" aria-hidden="true"></i>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-form">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forget">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forget password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account?
+                        <a href="#" class="register-link">
+                            Register
+                        </a>
+                    </p>
+                </div>
+            </form>
+        </div>
+        <div class="form-box register">
+            <h2>Registeration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon-form">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-form">
+                        <i class="fa fa-envelope-square" aria-hidden="true"></i>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-form">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forget">
+                    <label><input type="checkbox">I agree to the term & conditions</label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account?
+                        <a href="#" class="register-link">
+                            Login
+                        </a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="com.js"></script>
+</body>
+</html>
