@@ -140,7 +140,7 @@ header .nav_bar{
   font-size: 12px;
   margin-top:0;
 }*/
-.wrapper{
+/*.wrapper{
   position: relative;
   width: 400px;
   height: 440px;
@@ -152,13 +152,22 @@ header .nav_bar{
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: height .2s ease;
+}
+.wrapper .active-form {
+  height:520px;
 }
 .wrapper .form-box{
   width:100%;
   padding: 40px;
 }
 .wrapper .form-box.login{
-  /*display:none;*/
+  transition: transform .18s ease;
+  transform: translateX(0);
+}
+.wrapper .active-form .form-box.login{
+  transition:none;
+  transform:translateX(-400px);
 }
 .wrapper .form-box.register{
   position: absolute;
@@ -270,6 +279,116 @@ header .nav_bar{
 }
 .login-register p a:hover{
   text-decoration: underline;
+}*/
+/*Login styling*/
+.wrapper {
+  background: transparent;
+  background-color: rgb(184, 208, 233);
+  text-align: center;
+  width: 350px;
+  height:400px;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 100px;
+  filter: 20px ;
+  border: 2px solid rgb(139, 0, 0);
+  display:block;
+  transform: scale(0);
+  transition: 0.3s ease;
+}
+.account-login .wrapper{
+  transform: scale(1);
+}
+.wrapper #form-close{
+  position:absolute;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 150px;
+}
+.form-box h2{
+  color: #000;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 40px ;
+  background-color: rgb(152, 251, 152);
+  width:100px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  filter: 10px;
+}
+.form-box .email{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.form-box label{
+  position:absolute;
+  font-size:.8em;
+  font-weight: 500;
+  padding-left: 10px;
+  margin-top: -10px;
+}
+.form-box input{
+  background-color: rgb(250, 249, 246);
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  outline:none;
+  border: none;
+  text-indent: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+}
+.form-box span{
+  position:absolute;
+  margin-left: -25px;
+  margin-top: 10px;
+  font-size:14px;
+}
+.forget-password a{
+  color: #000;
+  position: relative;
+  font-size:.8em;
+  left:66px;
+  top:-4px
+}
+.forget-password a:hover{
+  text-decoration: underline;
+  color: #2909dd;
+}
+.form-box .login-btn{
+  width: 100px;
+  height:40px;
+  background-color: rgb(28, 226, 114);
+  text-align: center;
+  margin:auto;
+  border-radius: 7px;
+  border: 2px solid;
+  margin-top: 2rem;
+}
+.login-btn button{
+  color: rgb(221, 65, 13);
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+}
+.login-btn button:hover{
+  color: #000;
+}
+.login-btn:hover{
+  background-color: #14a0e1;
+}
+.form-box .register-link p,a {
+  font-size: .9em;
+  color: #000;
+  font-weight: 500;
+}
+.form-box .register-link a:hover{
+  text-decoration: underline;
+  color: #2909dd;
 }
 @media screen and (max-width:900px) {
   .nav_bar :where(#menu_close_button, #menu_open_button){
@@ -286,7 +405,7 @@ header .nav_bar{
   }
   .nav_bar .nav_menu{
     display:block;
-    position: fixed;
+    position:fixed;
     left: -300px;
     top: 0;
     width: 300px;

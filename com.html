@@ -54,75 +54,32 @@
         </nav>
     </header>
     <div class="wrapper">
-        <span class="fas fa-times"></span>
-        <div class="form-box login">
-            <h2>Login</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon-form">
-                        <i class="fa fa-envelope-square" aria-hidden="true"></i>
-                    </span>
-                    <input type="email" required>
-                    <label>Email</label>
+        <form action="#"></form>
+        <button id="form-close" class="fas fa-times"></button>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <div class="email">
+                    <label>Username or Email</label>
+                    <input type="email" placeholder="Enter your username or email" required>
+                    <span class="icon-email"><i class="fa-solid fa-envelope"></i></span>
                 </div>
-                <div class="input-box">
-                    <span class="icon-form">
-                        <i class="fa fa-lock" aria-hidden="true"></i>
-                    </span>
-                    <input type="password" required>
+                <div class="password">
                     <label>Password</label>
+                    <input type="password" placeholder="Enter your password" required>
+                    <span class="icon-pwd"><i class="fa-solid fa-lock"></i></span>
                 </div>
-                <div class="remember-forget">
-                    <label><input type="checkbox">Remember me</label>
-                    <a href="#">Forget password?</a>
+                <div class="forget-password">
+                    <a href="#forget password">Forget Password?</a>
                 </div>
-                <button type="submit" class="btn">Login</button>
-                <div class="login-register">
-                    <p>Don't have an account?
-                        <a href="#" class="register-link">
-                            Register
-                        </a>
-                    </p>
+                <div class="login-btn">
+                    <button type="submit">Login</button>
                 </div>
-            </form>
-        </div>
-        <div class="form-box register">
-            <h2>Registeration</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon-form">
-                        <i class="fa fa-user" aria-hidden="true"></i>
-                    </span>
-                    <input type="text" required>
-                    <label>Username</label>
+                <div class="register-link">
+                    <p>Don't have an account?<a href="#">Register</a></p>
                 </div>
-                <div class="input-box">
-                    <span class="icon-form">
-                        <i class="fa fa-envelope-square" aria-hidden="true"></i>
-                    </span>
-                    <input type="email" required>
-                    <label>Email</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon-form">
-                        <i class="fa fa-lock" aria-hidden="true"></i>
-                    </span>
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <div class="remember-forget">
-                    <label><input type="checkbox">I agree to the term & conditions</label>
-                </div>
-                <button type="submit" class="btn">Register</button>
-                <div class="login-register">
-                    <p>Already have an account?
-                        <a href="#" class="register-link">
-                            Login
-                        </a>
-                    </p>
-                </div>
-            </form>
-        </div>
+               
+            </div>
+        </form>
     </div>
     <script src="com.js"></script>
 </body>

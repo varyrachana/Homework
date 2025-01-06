@@ -6,7 +6,7 @@ menuOpenButton.addEventListener("click", () =>{
 });
 // close menu when the button is clicked
 menuCloseButton.addEventListener("click", () => menuOpenButton.click());
-
+// Dark-Mode
 const body = document.querySelector("body");
         header = document.querySelector("header");
         modeToggle = document.querySelector(".dark-mode")
@@ -14,7 +14,11 @@ const body = document.querySelector("body");
         document.body.classList.toggle("active");
         body.classList.toggle("dark");
     });
+//Acount login
+const account=document.querySelector("#account");
+const closeForm=document.querySelector('#form-close');
+account.addEventListener("click", () =>{
+    document.body.classList.toggle("account-login");
+});
+closeForm.addEventListener('click', () => account.click());
 
-    const wrapper= document.querySelector('.wrapper');
-    const loginLink=document.querySelector('.wrapper');
-    const registerLink=document.querySelector('.wrapper');
