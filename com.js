@@ -1,3 +1,4 @@
+//Action of Navitation bar
 const menuOpenButton=document.querySelector("#menu_open_button");
 const menuCloseButton=document.querySelector("#menu_close_button");
 menuOpenButton.addEventListener("click", () =>{
@@ -14,7 +15,14 @@ const body = document.querySelector("body");
         document.body.classList.toggle("active");
         body.classList.toggle("dark");
     });
-//Acount login
+// Acotion between login and registeration
+const registerLink=document.querySelector('.register-link');
+const loninLink=document.querySelector('.login-link');
+registerLink.addEventListener('click', () =>{
+   document.body.classList.toggle('action-login');
+});
+loninLink.addEventListener('click', () => registerLink.click());
+//Acount login with icon
 const account=document.querySelector("#account");
 const closeForm=document.querySelector('#form-close');
 account.addEventListener("click", () =>{
