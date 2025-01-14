@@ -354,6 +354,145 @@ header .nav_bar{
   font-size: 18px;
   color: #000;
 }
+/*Student page stylile*/
+.students{
+  margin-top:70px;
+  margin-left:1rem;
+}
+.students .student{
+  margin-top: 30px;
+  width: 140px;
+  height: 40px;
+  font-size:30px;
+  font-weight: 600;
+  color:rgb(55, 222, 55) ;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.student:hover{
+  border-bottom: solid 4px rgb(255, 204, 101);
+  transition: .3s ease-in-out;
+}
+.students .note{
+  padding: 1rem;
+  margin:1rem;
+  background-color: rgb(135, 206, 235);
+  border-radius: 20px;
+}
+.note:hover{
+  border: solid 3px rgb(255, 36, 0);
+  transition: .3s ease-in-out;
+}
+.note-text:hover{
+  border-bottom: solid 2px rgb(255, 36, 0);
+  transition: .3s ease-in-out;
+}
+.note .note-text{
+  font-size: 20px;
+  width: 80px;
+  height: 30px;
+  color:rgb(255, 0, 0);
+  text-align: center;
+  background-color: rgb(231, 255, 94);
+  position: absolute;
+  margin-top: -30px;
+  border-radius: 1rem;
+}
+.note p{
+  margin-top: 1rem;
+  font-size: 18px;
+  color: #000;
+}
+/* post site*/
+.students .post{
+  padding: 1rem;
+  margin:1rem;
+  background-color: rgb(135, 206, 235);
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.post .post-bar{
+  display: flex;
+}
+.post-bar .pic-i{
+  font-size: 28px;
+}
+.post-bar input{
+  width: 100%;
+  height: 32px;
+  margin-top:4px;
+  margin-left:14px;
+  border-radius: 1rem;
+  text-indent: 1rem;
+}
+.post .post-icon{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.post-icon span{
+  color: #000;
+  width:80px;
+  height: 40px;
+  text-align: center;
+  background-color: #9de9b1;
+  border-radius: 10px;
+  padding-top: 7px;
+  border:solid 2px rgb(25, 25, 112);
+}
+.post:hover{
+  border: solid 3px rgb(240, 138, 5);
+  transition: .3s ease-in-out;
+}
+.post-icon span:hover{
+  background-color:rgb(255, 191, 0) ;
+}
+/*my post*/
+.my-post{
+  background-color: #9de9b1;
+  padding: 1rem;
+  margin:1rem;
+  margin-top: 30px;
+  border-radius:20px ;
+}
+.my-post .p-bar{
+  margin-top: -10px;
+  display: flex;
+  background-color: rgb(250, 249, 246);
+  border-radius: 1rem;
+}
+.my-post .p-bar img{
+  width: 40px;
+  height: 40px;
+}
+.p-bar .n{
+  margin-top: 9px;
+  font-size: 17px;
+  margin-left: 5px;
+}
+.my-post .b-bar{
+  display: flex;
+  justify-content: space-between;
+}
+.my-post .s-text{
+  position: relative;
+  top: 20px;
+}
+.b-bar span{
+  width:94px;
+  height: 40px;
+  margin-top: 40px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding-top: 6px;
+}
+.b-bar span:hover{
+  background-color:rgb(255, 191, 0) ;
+}
 @media screen and (max-width:800px) {
   body.show-mobile-menu header::before{
     content: "";
