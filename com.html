@@ -46,7 +46,9 @@
                     <button id="dark_mode" class="fa-solid fa-moon"></button>
                 </div>
                 <div class="icon">
-                    <button id="account" class="fa-solid fa-circle-user"></button>
+                    <a href="#acc">
+                        <button id="account" class="fa-solid fa-circle-user"></button>
+                    </a>
                     <button id="menu_open_button" class="fa fa-bars"></button>
                 </div>
             </div>
@@ -54,6 +56,62 @@
         </nav>
     </header>
     <main>
+    <div class="wrap">
+        <h2>Login Form</h2>
+        <div class="wrapper" id="acc">
+            <form action="#"></form>
+            <button id="form-close" class="fas fa-times"></button>
+                <div class="form-box login">
+                    <h2>Login</h2>
+                    <div class="email">
+                        <label>Username or Email</label>
+                        <input type="email" placeholder="Enter your username or email" required>
+                        <span class="icon-email"><i class="fa-solid fa-envelope"></i></span>
+                    </div>
+                    <div class="password">
+                        <label>Password</label>
+                        <input type="password" placeholder="Enter your password" required>
+                        <span class="icon-pwd"><i class="fa-solid fa-lock"></i></span>
+                    </div>
+                    <div class="forget-password">
+                        <a href="#forget password">Forget Password?</a>
+                    </div>
+                    <div class="login-btn">
+                        <button type="submit">Login</button>
+                    </div>
+                    <div class="register-link">
+                        <p>Don't have an account?<a href="#">Register</a></p>
+                    </div>
+                   
+                </div>
+               <div class="form-box register">
+                    <h2 class="registeration">Registeration</h2>
+                    <div class="username">
+                        <label>Username</label>
+                        <input type="email" placeholder="Enter your username" required>
+                        <span class="icon-username"><i class="fa-solid fa-user"></i></span>
+                    </div>
+                    <div class="email">
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter your email" required>
+                        <span class="icon-email"><i class="fa-solid fa-envelope"></i></span>
+                    </div>
+                    <div class="password">
+                        <label>Password</label>
+                        <input type="password" placeholder="Enter your password" required>
+                        <span class="icon-pwd"><i class="fa-solid fa-lock"></i></span>
+                    </div>
+                    <div class="login-btn">
+                        <button type="submit">Register</button>
+                    </div>
+                    <div class="login-link">
+                        <p>Already have an account?<a href="#Login">Login</a></p>
+                    </div>  
+                   
+                </div>
+            </form>
+        </div>
+    </div>    
         <div class="home" id="home">
              <h1 class="big-title">
                  Welcome to my Webpage!
@@ -309,60 +367,7 @@
                     <div class="m-but"><button type="submit" class="sub">Submit</button></div>
                 </div>
             </div>
-        </div>
-        <div class="wrapper">
-            <form action="#"></form>
-            <button id="form-close" class="fas fa-times"></button>
-                <div class="form-box login">
-                    <h2>Login</h2>
-                    <div class="email">
-                        <label>Username or Email</label>
-                        <input type="email" placeholder="Enter your username or email" required>
-                        <span class="icon-email"><i class="fa-solid fa-envelope"></i></span>
-                    </div>
-                    <div class="password">
-                        <label>Password</label>
-                        <input type="password" placeholder="Enter your password" required>
-                        <span class="icon-pwd"><i class="fa-solid fa-lock"></i></span>
-                    </div>
-                    <div class="forget-password">
-                        <a href="#forget password">Forget Password?</a>
-                    </div>
-                    <div class="login-btn">
-                        <button type="submit">Login</button>
-                    </div>
-                    <div class="register-link">
-                        <p>Don't have an account?<a href="#">Register</a></p>
-                    </div>
-                   
-                </div>
-               <div class="form-box register">
-                    <h2 class="registeration">Registeration</h2>
-                    <div class="username">
-                        <label>Username</label>
-                        <input type="email" placeholder="Enter your username" required>
-                        <span class="icon-username"><i class="fa-solid fa-user"></i></span>
-                    </div>
-                    <div class="email">
-                        <label>Email</label>
-                        <input type="email" placeholder="Enter your email" required>
-                        <span class="icon-email"><i class="fa-solid fa-envelope"></i></span>
-                    </div>
-                    <div class="password">
-                        <label>Password</label>
-                        <input type="password" placeholder="Enter your password" required>
-                        <span class="icon-pwd"><i class="fa-solid fa-lock"></i></span>
-                    </div>
-                    <div class="login-btn">
-                        <button type="submit">Register</button>
-                    </div>
-                    <div class="login-link">
-                        <p>Already have an account?<a href="#Login">Login</a></p>
-                    </div>  
-                   
-                </div>
-            </form>
-        </div>
+        </div> 
     </main>
     <script src="com.js"></script>
 </body>
