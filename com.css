@@ -8,12 +8,16 @@
     font-weight: 400;
     font-style: normal;
   }
+  html{
+    scroll-behavior: smooth;
+  }
   body{
-    background-color: rgb(240, 255, 255);
+    background-color:rgb(240, 255, 255);
   }
   /*dark mode styling*/
   .dark {
-    background-color: #4a4a4a;
+    background-color: #2a2727;
+    text-decoration: #fff;
   }
   .nav_bar :where(#sunlight){
    position: absolute;
@@ -54,10 +58,12 @@
 }
 /*Navigation bar styling*/
 header{
+  position:fixed;
   margin:0;
   width: 100%;
   z-index: 5;
   background-color: rgb(174,214,241);
+
 }
 header .nav_bar{
   display: flex;
@@ -111,6 +117,7 @@ header .nav_bar{
   border: 2px solid rgb(139, 0, 0);
   transform: scale(0);
   transition: 0.3s ease;
+  display: block;
 }
 .account-login .wrapper{
   transform: scale(1);
@@ -228,12 +235,15 @@ header .nav_bar{
 }
 /* styling Homepage*/
 .home{
-  position:relative;
+  position: relative;
   background:transparent;
   width: 100%;
-  padding-top: 100px;
+  height:100vh;
+  padding-top: 40vh;
   text-align: center;
+  align-items: center;
   margin: auto;
+  display: block;
 }
 .home .big-title{
   color:rgb(11, 218, 81);
@@ -273,10 +283,14 @@ header .nav_bar{
   border: 1px solid rgb(128, 0, 32);
 }
 .About{
+  width: 100%;
+  height: 100vh;
   position: relative;
   text-align: center;
+  align-items: center;
   display: flex;
   margin-top: 30px;
+  page-break-before: always;
 }
 .About .me{
   width: 150px;
@@ -493,6 +507,127 @@ header .nav_bar{
 .b-bar span:hover{
   background-color:rgb(255, 191, 0) ;
 }
+.contact{
+  padding: 1rem;
+  margin:1rem;
+  margin-top: 40px;
+  align-items: center;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+.concon{
+  display: flex;
+  justify-content: space-between;
+}
+.contact .con{
+  margin-top: 30px;
+  width: 180px;
+  height: 40px;
+  font-size:30px;
+  font-weight: 600;
+  color:rgb(55, 222, 55) ;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.contact .con:hover{
+  border-bottom: solid 4px rgb(240, 138, 5);
+  transition: .3s ease-in-out;
+}
+.contact .con-text .p{
+  background-color: #799ce0;
+  display: flex;
+  border-radius: 1rem;
+}
+.p .nm h4{
+  font-size: 20px;
+}
+.con-text .p i{
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-right: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.contact .con-text .g{
+  background-color: #49d223;
+  display: flex;
+  margin-top: 20px;
+  border-radius: 1rem;
+}
+.con-text .g i{
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-right: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.g .em h4{
+  font-size: 20px;
+}
+.em a:hover{
+  color: #2909dd;
+}
+.loc{
+  left:0;
+}
+.map h3{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.message{
+  width:400px;
+  background-color: #f3f062;
+  border: 3px solid rgb(13, 253, 77);
+  border-radius: 20px;
+}
+.message h2{
+  background-color: #8cc9e6;
+  width:160px;
+  height: 40px;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  border-bottom-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+}
+.message .m-input{
+  margin: 40px;
+  margin-top: 60px;
+}
+.m-input input{
+  width: 100%;
+  height:40px;
+  margin-top: 20px;
+  border-radius: 20px;
+  text-indent:10px;
+}
+.message .m-but{
+  position:block;
+  background-color: #fff;
+  margin:auto;
+  width:80px;
+  height:40px;
+  text-align:center;
+  align-items:center;
+  border-radius: 1rem;
+  border: solid 3px rgb(22, 215, 215);
+}
+.m-but:hover{
+  background-color: rgb(144, 220, 255);
+}
+.m-but button{
+  font-size:20px;
+  padding-top:4px;
+}
 @media screen and (max-width:800px) {
   body.show-mobile-menu header::before{
     content: "";
@@ -526,7 +661,7 @@ header .nav_bar{
     left: -300px;
     top: 0;
     width: 300px;
-    height: 100%;
+    height:100vh;
     display: flex;
     flex-direction:column ;
     align-items: center;
@@ -545,4 +680,14 @@ header .nav_bar{
     margin-top: 16px;
   }
   
+}
+.concon{
+  display:block;
+}
+.message{
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  margin-top: 70px;
+  align-items: center;
 }
