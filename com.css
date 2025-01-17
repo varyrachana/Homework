@@ -12,11 +12,17 @@
     scroll-behavior: smooth;
   }
   body{
-    background-color:rgb(240, 255, 255);
+    background-color:#f7fbff;
+  }
+  .About span{
+    color:rgb(95, 212, 242);
   }
   /*dark mode styling*/
   .dark {
     background-color: #2a2727;
+    text-decoration: #fff;
+  }
+  .dark p{
     text-decoration: #fff;
   }
   .nav_bar :where(#sunlight){
@@ -58,7 +64,7 @@
 }
 /*Navigation bar styling*/
 header{
-top:0;  
+  top:0;  
   position:fixed;
   margin:0;
   width: 100%;
@@ -252,6 +258,9 @@ header .nav_bar{
   color: #2909dd;
 }
 /* styling Homepage*/
+.General-Knowledge{
+  color:rgb(95, 212, 242);
+}
 .home{
   position: relative;
   background:transparent;
@@ -262,6 +271,7 @@ header .nav_bar{
   align-items: center;
   margin: auto;
   display: block;
+  color:rgb(95, 212, 242);
 }
 .home .big-title{
   color:rgb(11, 218, 81);
@@ -384,7 +394,7 @@ header .nav_bar{
 .General-Knowledge p{
   margin-top: 1rem;
   font-size: 18px;
-  color: #000;
+  color: rgb(95, 212, 242);
 }
 /*Student page stylile*/
 .students{
