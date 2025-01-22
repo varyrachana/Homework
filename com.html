@@ -56,12 +56,10 @@
         </nav>
     </header>
     <main>
-    <div class="wrap">
-        <h2>Login Form</h2>
-        <div class="wrapper" id="acc">
-            <form action="#"></form>
+        <div class="wrapper">
             <button id="form-close" class="fas fa-times"></button>
-                <div class="form-box login">
+            <div class="form-box login">
+                <form action="#">
                     <h2>Login</h2>
                     <div class="email">
                         <label>Username or Email</label>
@@ -73,18 +71,19 @@
                         <input type="password" placeholder="Enter your password" required>
                         <span class="icon-pwd"><i class="fa-solid fa-lock"></i></span>
                     </div>
-                    <div class="forget-password">
-                        <a href="#forget password">Forget Password?</a>
-                    </div>
-                    <div class="login-btn">
-                        <button type="submit">Login</button>
-                    </div>
-                    <div class="register-link">
-                        <p>Don't have an account?<a href="#">Register</a></p>
-                    </div>
-                   
+                </form>
+                <div class="forget-password">
+                    <a href="#forget password">Forget Password?</a>
                 </div>
-               <div class="form-box register">
+                <div class="login-btn">
+                    <button type="submit">Login</button>
+                </div>
+                <div class="register-link">
+                    <p>Don't have an account?<a href="#">Register</a></p>
+                </div>
+            </div>   
+            <div class="form-box register">
+                <form action="#register"></form>
                     <h2 class="registeration">Registeration</h2>
                     <div class="username">
                         <label>Username</label>
@@ -101,17 +100,15 @@
                         <input type="password" placeholder="Enter your password" required>
                         <span class="icon-pwd"><i class="fa-solid fa-lock"></i></span>
                     </div>
-                    <div class="login-btn">
-                        <button type="submit">Register</button>
-                    </div>
-                    <div class="login-link">
-                        <p>Already have an account?<a href="#Login">Login</a></p>
-                    </div>  
-                   
+                </form>
+                <div class="login-btn">
+                    <button type="submit">Register</button>
                 </div>
-            </form>
+                <div class="login-link">
+                    <p>Already have an account?<a href="#Login">Login</a></p>
+                </div>    
+            </div>
         </div>
-    </div>    
         <div class="home" id="home">
              <h1 class="big-title">
                  Welcome to my Webpage!
@@ -124,9 +121,9 @@
                  <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
                  <button class="research">Search</button>
              </div>
-         </div>
+        </div>
          <div class="About" id="about">
-                <img src="c:\Users\USER\Pictures\rachana.jpg" alt="my-image" class="my-image">
+                <img src="/image/rachana.jpg" class="my-image">
                 <div class="information">
                     <h2 class="me">About Me</h2>
                     <span class="about-detail">

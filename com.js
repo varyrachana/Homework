@@ -1,12 +1,17 @@
 //Action of Navitation bar
 const menuOpenButton=document.querySelector("#menu_open_button");
 const menuCloseButton=document.querySelector("#menu_close_button");
+const navLink=document.querySelectorAll(".nav_menu .nav_link")
 menuOpenButton.addEventListener("click", () =>{
     // Toggle mobile menu visibility
    document.body.classList.toggle("show-mobile-menu");
 });
 // close menu when the button is clicked
 menuCloseButton.addEventListener("click", () => menuOpenButton.click());
+
+navLink.forEach(link =>{
+    link.addEventListener("click",()=> menuCloseButton.click());
+})
 // Dark-Mode
 const body = document.querySelector("body");
         header = document.querySelector("header");
