@@ -35,3 +35,30 @@ account.addEventListener("click", () =>{
 });
 closeForm.addEventListener('click', () => account.click());
 
+
+// Handle switching between login and register forms
+const showRegisterFormLink = document.querySelector('#showRegisterForm');
+const showLoginFormLink = document.querySelector('#showLoginForm');
+const loginForm = document.querySelector('#loginForm');
+const registerForm = document.querySelector('#registerForm');
+const formCloseButton = document.querySelector('#form-close');
+
+// Show the register form when "Register" link is clicked
+showRegisterFormLink.addEventListener('click', () => {
+    loginForm.style.display = 'none'; // Hide login form
+    registerForm.style.display = 'block'; // Show register form
+});
+
+// Show the login form when "Login" link is clicked
+showLoginFormLink.addEventListener('click', () => {
+    registerForm.style.display = 'none'; // Hide register form
+    loginForm.style.display = 'block'; // Show login form
+});
+
+// Close the form when the close button is clicked
+formCloseButton.addEventListener('click', () => {
+    loginForm.style.display = 'none'; // Hide login form
+    registerForm.style.display = 'none'; // Hide register form
+});
+
+

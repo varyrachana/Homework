@@ -58,55 +58,59 @@
     <main>
         <div class="wrapper">
             <button id="form-close" class="fas fa-times"></button>
-            <div class="form-box login">
-                <form action="#">
+        
+            <!-- Login Form -->
+            <div class="form-box login" id="loginForm">
+                <form id="loginFormElement" action="#">
                     <h2>Login</h2>
                     <div class="email">
                         <label>Username or Email</label>
-                        <input type="email" placeholder="Enter your username or email" required>
+                        <input type="email" id="loginEmail" placeholder="Enter your username or email" required>
                         <span class="icon-email"><i class="fa-solid fa-envelope"></i></span>
                     </div>
                     <div class="password">
                         <label>Password</label>
-                        <input type="password" placeholder="Enter your password" required>
+                        <input type="password" id="loginPassword" placeholder="Enter your password" required>
                         <span class="icon-pwd"><i class="fa-solid fa-lock"></i></span>
                     </div>
+                    <div class="forget-password">
+                        <a href="#forget-password">Forget Password?</a>
+                    </div>
+                    <div class="login-btn">
+                        <button type="submit">Login</button>
+                    </div>
+                    <div class="register-link">
+                        <p>Don't have an account?<a href="#" id="showRegisterForm">Register</a></p>
+                    </div>
                 </form>
-                <div class="forget-password">
-                    <a href="#forget password">Forget Password?</a>
-                </div>
-                <div class="login-btn">
-                    <button type="submit">Login</button>
-                </div>
-                <div class="register-link">
-                    <p>Don't have an account?<a href="#">Register</a></p>
-                </div>
-            </div>   
-            <div class="form-box register">
-                <form action="#register"></form>
-                    <h2 class="registeration">Registeration</h2>
+            </div>
+        
+            <!-- Registration Form -->
+            <div class="form-box register" id="registerForm" style="display: none;">
+                <form id="registerFormElement" action="#">
+                    <h2>Registration</h2>
                     <div class="username">
                         <label>Username</label>
-                        <input type="email" placeholder="Enter your username" required>
+                        <input type="text" id="registerUsername" placeholder="Enter your username" required>
                         <span class="icon-username"><i class="fa-solid fa-user"></i></span>
                     </div>
                     <div class="email">
                         <label>Email</label>
-                        <input type="email" placeholder="Enter your email" required>
+                        <input type="email" id="registerEmail" placeholder="Enter your email" required>
                         <span class="icon-email"><i class="fa-solid fa-envelope"></i></span>
                     </div>
                     <div class="password">
                         <label>Password</label>
-                        <input type="password" placeholder="Enter your password" required>
+                        <input type="password" id="registerPassword" placeholder="Enter your password" required>
                         <span class="icon-pwd"><i class="fa-solid fa-lock"></i></span>
                     </div>
+                    <div class="login-btn">
+                        <button type="submit">Register</button>
+                    </div>
+                    <div class="login-link">
+                        <p>Already have an account?<a href="#" id="showLoginForm">Login</a></p>
+                    </div>
                 </form>
-                <div class="login-btn">
-                    <button type="submit">Register</button>
-                </div>
-                <div class="login-link">
-                    <p>Already have an account?<a href="#Login">Login</a></p>
-                </div>    
             </div>
         </div>
         <div class="home" id="home">
@@ -123,7 +127,8 @@
              </div>
         </div>
          <div class="About" id="about">
-                <img src="/image/rachana.jpg" class="my-image">
+                <!--<img src="/image/rachana.jpg" class="my-image">-->
+                <img src="c:\Users\USER\Pictures\rachana.jpg" class="my-image">
                 <div class="information">
                     <h2 class="me">About Me</h2>
                     <span class="about-detail">
@@ -367,5 +372,6 @@
         </div> 
     </main>
     <script src="com.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
